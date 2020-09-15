@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 
-import api from '../../service/api'
+import api from '../../../service/api'
 
-export default function ListarPersonagens(){
+function ListarPersonagensImagens(){
 
     const [lista, setLista] = useState([]);
 
@@ -15,14 +15,9 @@ export default function ListarPersonagens(){
         }) 
     },[]);
 
-    return(
-        <>
-        <ul>
-                {lista.map(hero => (
-                    <li key={hero.id} > {hero.name}</li>
-                ))}
-            </ul>
-        </>
-    );
+
+    
 
 }
+
+export default () => <img src={}/>

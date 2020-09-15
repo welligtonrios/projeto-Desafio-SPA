@@ -1,20 +1,23 @@
 import React from 'react';
-import ListaPersonagens from '../../components/ListarPersonagens'
+import ListaPersonagens from '../../components/ListarPersonagens/Nome'
+import Header from '../../components/Header'
+import {FaUsers} from 'react-icons/fa'
+import './style.css';
 
  function Home(){
 
     return(
         <>
-                
+            
+           <Header logo="Personagens Marvel" />
                     <h1>Lista de Personagens</h1>
-                    <ListaPersonagens />
-                
-
+           
+                <ListaPersonagens />
+            
+         
         </>
 
     )
-
-
 
 
  }
