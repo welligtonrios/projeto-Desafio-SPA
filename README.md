@@ -1,3 +1,42 @@
+# Projeto Desafio Fortbrasil
+## Objetivo:
+### criar uma SPA (Single Page Application) que mostra a listagem de
+### personagens da marvel consumindo a seguinte API: https://developer.marvel.com/ .
+
+
+# Ferramentas utilizadas. 
+## React
+https://pt-br.reactjs.org/
+## reactstrap
+https://reactstrap.github.io/
+## API Marvel
+ https://developer.marvel.com/
+
+# reactstrap
+## NPM
+#### Install reactstrap and peer dependencies via NPM
+
+###### npm install --save reactstrap react react-dom
+
+## Adicionando Bootstrap
+
+#### Install reactstrap and Bootstrap from NPM. Reactstrap does not include Bootstrap CSS so this needs to be installed as well:
+
+
+
+##### npm install --save bootstrap
+##### npm install --save reactstrap react react-dom
+
+## Exemplo
+
+ Import Bootstrap CSS in the src/index.js file:
+ import 'bootstrap/dist/css/bootstrap.min.css';
+ Import required reactstrap components within src/App.js file or your custom component files:
+ import { Button } from 'reactstrap';
+
+
+
+# React
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
