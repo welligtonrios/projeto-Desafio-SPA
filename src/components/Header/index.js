@@ -7,6 +7,7 @@ function Header({ logo, icon }) {
     
 
     return (
+        <>
         <header id="header">
             <a href="#" className="logo">
                 {logo}
@@ -23,6 +24,14 @@ function Header({ logo, icon }) {
 
 
         </header>
+
+        <div className="listarPersonagem">
+            <button className="barra2">
+                aaa
+            </button>
+        </div>
+
+        </>
     );
 }
 

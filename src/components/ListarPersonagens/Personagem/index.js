@@ -23,14 +23,14 @@ export default function ListarPersonagens() {
 
 
 
-    useEffect(() => {
+    /*useEffect(() => {
         api.get('').then(response => {
             setLista(response.data.data.results);
         })
             .catch(err => {
                 console.log('error', err)
             })
-    }, []);
+    }, []);*/
 
     return (
         <>
@@ -49,7 +49,6 @@ export default function ListarPersonagens() {
                         <div>
                             <h1>{hero.name}</h1>
                             <img src={`${hero.thumbnail.path}.${hero.thumbnail.extension}`}/>
-                            <h4>{hero.description}</h4>
                         </div>
                     </li>
 
