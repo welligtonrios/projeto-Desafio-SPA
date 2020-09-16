@@ -1,40 +1,59 @@
-import React, { useEffect, useState } from 'react';
-
+import React, { useEffect, useState,useCallback } from 'react';
 import api from '../../../service/api'
 import './style.css'
 
-export default function ListarPersonagens(){
-
+export default function ListarPersonagens() {
     const [lista, setLista] = useState([]);
-    
-    useEffect(() => {
-        api.get('').then(response =>{
+    const [hero, setHeros] = useState('');
+
+   // async function buscarHeroi() {
+
+       //console.log(response.data.data.results);
+       
+       // setLista([...lista,data]);*/
+        const buscarHeroi=  useCallback(async ()=> {
+            const response = await api.get('http://gateway.marvel.com/v1/public/characters?name=Ajaxis&ts=1&apikey=f395721c8a9678197e445dc3da092879&hash=c873e15a8ca807d3232075d42403fd09')
+            const data  = response.data.data.results;
+            setLista([...lista, data]);
+           //setNewTech('');
+          },[lista, hero]);
+
+    //}
+
+
+
+    /*useEffect(() => {
+        api.get('').then(response => {
             setLista(response.data.data.results);
         })
-        .catch(err =>{
-            console.log('error',err)
-        }) 
-    },[]);
+            .catch(err => {
+                console.log('error', err)
+            })
+    }, []);*/
 
-    return(
+    return (
         <>
-            
+            <input type="text"
+                value={hero}
+                onchange={e => setHeros(e.target.value)}
+            />
 
-    
-             <ul>
-                {lista.map(hero => (   
+            <button type="button" onClick={buscarHeroi}>Pesquisar</button>
+
+
+
+            <ul>
+                {lista.map(hero => (
                     <li key={hero.id} >
                         <div>
                             <h1>{hero.name}</h1>
                         </div>
-                        <img src={`${hero.thumbnail.path}.${hero.thumbnail.extension}`}/>
-                        
                     </li>
-            
+
                 ))}
-            
-             </ul>
-    
+
+            </ul>
+
 
         </>
 
