@@ -1,37 +1,27 @@
-.box{
-    margin-bottom: 20px;
-    width: 300px;
-    height: 200px;
-    border: 1px solid red;
-
+.imagens{
+  height: 180px;
+  width:318px ;
+  float: left;
+  margin:0px 10px 5px 50;
+  margin-left: 135px;
+  align-items: center;
+  
 }
 
-/*brusca*/
+li {
+  list-style-type: none;
+}
+.postagem{
+  background: #fff;
+	padding: 10px;
+  margin-bottom: 10px;
+}
 
+#text-mgs{
+  text-align: center;
+}
 
-/*imput de busca*/
-#txtBusca{
-    float:left;
-    background-color:transparent;
-    padding-left:5px;
-    font-size:18px;
-    border:none;
-    height:32px;
-    width:226px;
-  }
-  
-  #btnBusca{
-    float:left;
-    cursor:pointer;
-  }
-  
-  #divBusca img{
-    float:left;
-  }
-  
-  #divBusca{
-    border:solid 10px rgba(47, 79, 79, 0.8);
-    border-radius:10px;
-    height:37px;
-    width:400px;
-  }
+.area-principal{
+  width: 720px;
+	margin: 55px auto 10px auto;
+}

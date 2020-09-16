@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './style.css'
+/*Booststrap / reactstrap*/
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 import { Badge } from 'reactstrap';
 
@@ -10,8 +11,8 @@ import { Badge } from 'reactstrap';
         const toggleNavbar = () => setCollapsed(!collapsed);
       
         return (
-          <div>
-            <Navbar color="dark" light>
+          <div className="navBar">
+            <Navbar  light >
               <NavbarBrand href="/" className="mr-auto">
                  <h1><Badge color="danger">MARVEL</Badge></h1>
             </NavbarBrand>

@@ -1,25 +1,39 @@
 import React from 'react';
 import ListaPersonagens from '../../components/ListarPersonagens/Nome';
 import Header from '../../components/Header'
+import ListarPersonagem from '../../components/ListarPersonagens/Personagem'
 import './style.css'
+import { InputGroup, InputGroupAddon, Button, Input } from 'reactstrap';
 
 
- function Home(){
+function Home() {
 
-    return(
-        <>
+   return (
+      <>
+
+         <Header />
+
+         <div className="area-princiapal" >
+            <div className="textoLista">
+               <h1>Pesquisar Pesonagem</h1>
+               <ListarPersonagem />
+               
+               </div>
+         </div>
+
+         <div className="area-princiapal" >
+            <div className="textoLista">
+               <h1>Lista de Personagens</h1>
+               <ListaPersonagens />
+            </div>
             
-           <Header logo="Personagens Marvel" />
-                    <h1>Lista de Personagens</h1>
-                     
-                     <ListaPersonagens />
-                     
-        
-        </>
+         </div>
 
-    )
+      </>
+
+   )
 
 
- }
- 
- export default Home
+}
+
+export default Home
