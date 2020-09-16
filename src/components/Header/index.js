@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './style.css'
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
-
+import { Badge } from 'reactstrap';
 
     const Header = (props) => {
         
@@ -10,20 +10,20 @@ import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } f
         const toggleNavbar = () => setCollapsed(!collapsed);
       
         return (
-          <div className>
-            <Navbar color="faded" light>
+          <div>
+            <Navbar color="dark" light>
               <NavbarBrand href="/" className="mr-auto">
-                  <img src="/public/img/pesquiosa.pgn"/>
+                 <h1><Badge color="danger">MARVEL</Badge></h1>
             </NavbarBrand>
 
               <NavbarToggler onClick={toggleNavbar} className="mr-2" />
               <Collapse isOpen={!collapsed} navbar>
                 <Nav navbar>
                   <NavItem>
-                    <NavLink href="#">Projeto FortBrasil GitHub</NavLink>
+                    <a class="linkBarra" href="#"><h6>Projeto FortBrasil GitHub</h6></a>
                   </NavItem>
                   <NavItem>
-                    <NavLink href="https://github.com/welligtonrios?tab=repositories">GitHub</NavLink>
+                    <a class="linkBarra" href="https://github.com/welligtonrios?tab=repositories"><h6>GitHub</h6></a>
                   </NavItem>
                 </Nav>
               </Collapse>
@@ -32,32 +32,5 @@ import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } f
         );
       }
       
-    /*return (
-        <>
-        <header id="header">
-            <a href="#" className="logo">
-                {logo}
-                {icon}
-            </a>
-
-            <nav className="navbar">
-                <ul className="nav-list">
-                    <a href="#" className="nav-item">Home</a>
-                    <a href="#" className="nav-item">Services</a>
-                    <a href="#" className="nav-item">Contact</a>
-                </ul>
-            </nav>
-
-
-        </header>
-
-        <div className="listarPersonagem">
-            <button className="barra2">
-                aaa
-            </button>
-        </div>
-
-        </>
-    );*/
 
 export default Header;
