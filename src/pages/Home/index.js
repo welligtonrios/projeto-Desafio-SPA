@@ -1,8 +1,7 @@
 import React from 'react';
 import ListaPersonagens from '../../components/ListarPersonagens/Nome'
 import Header from '../../components/Header'
-import {FaUsers} from 'react-icons/fa'
-import './style.css';
+import './style.css'
 
  function Home(){
 
@@ -11,14 +10,13 @@ import './style.css';
             
            <Header logo="Personagens Marvel" />
                     <h1>Lista de Personagens</h1>
-           
                 <ListaPersonagens />
-            
-         
+        
         </>
 
     )
 
 
  }
- export default Home;
+ 
+ export default Home
