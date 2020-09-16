@@ -3,6 +3,7 @@
 ### criar uma SPA (Single Page Application) que mostra a listagem de
 ### personagens da marvel consumindo a seguinte API: https://developer.marvel.com/ .
 
+![marvel](https://github.com/welligtonrios/projeto-Desafio-SPA-fortBrasil/blob/master/marvel.png)
 
 # Ferramentas utilizadas. 
 ## React
@@ -29,12 +30,12 @@ https://reactstrap.github.io/
 
 ## Exemplo
 
- Import Bootstrap CSS in the src/index.js file:
- import 'bootstrap/dist/css/bootstrap.min.css';
- Import required reactstrap components within src/App.js file or your custom component files:
- import { Button } from 'reactstrap';
+##### Import Bootstrap CSS in the src/index.js file:
+##### import 'bootstrap/dist/css/bootstrap.min.css';
+##### Import required reactstrap components within src/App.js file or your custom component files:
+##### import { Button } from 'reactstrap';
 
-
+![exemplo](https://github.com/welligtonrios/projeto-Desafio-SPA-fortBrasil/blob/master/exemplo.png)
 
 # React
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
