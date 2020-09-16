@@ -1,12 +1,38 @@
-import React, { useEffect, useState } from 'react';
+import React, {useState} from 'react';
 import './style.css'
-import api from '../../service/api'
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
-function Header({ logo, icon }) {
 
-    
+    const Header = (props) => {
+        
+        const [collapsed, setCollapsed] = useState(true);
+      
+        const toggleNavbar = () => setCollapsed(!collapsed);
+      
+        return (
+          <div className>
+            <Navbar color="faded" light>
+              <NavbarBrand href="/" className="mr-auto">
+                  <img src="/public/img/pesquiosa.pgn"/>
+            </NavbarBrand>
 
-    return (
+              <NavbarToggler onClick={toggleNavbar} className="mr-2" />
+              <Collapse isOpen={!collapsed} navbar>
+                <Nav navbar>
+                  <NavItem>
+                    <NavLink href="#">Projeto FortBrasil GitHub</NavLink>
+                  </NavItem>
+                  <NavItem>
+                    <NavLink href="https://github.com/welligtonrios?tab=repositories">GitHub</NavLink>
+                  </NavItem>
+                </Nav>
+              </Collapse>
+            </Navbar>
+          </div>
+        );
+      }
+      
+    /*return (
         <>
         <header id="header">
             <a href="#" className="logo">
@@ -32,7 +58,6 @@ function Header({ logo, icon }) {
         </div>
 
         </>
-    );
-}
+    );*/
 
 export default Header;

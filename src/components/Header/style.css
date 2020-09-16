@@ -7,35 +7,3 @@
     align-items: center;
     justify-content: space-between;
 }
-
-#header .logo {
-    margin-left: 3rem;
-}
-
-#header .navbar {
-    margin-right: 30px;
-}
-
-.navbar .nav-list {
-    display: flex;
-}
-
-.nav-list .nav-item {
-    padding: 0 1rem;
-}
-
-.listarPersonagem{
-    margin: 20px;
-    border: 1px solid red;
-    position: relative;
-    background:red;
-}
-
-.barra1{
-    padding: 10px 200px 10px 200px;
-    position: relative;
-    
-    margin-right: 600px;
-    border: 1px solid maroon;
-    float: left;
-}

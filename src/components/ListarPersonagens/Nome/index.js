@@ -13,7 +13,7 @@ export default function ListarPersonagens() {
        
        //setLista([...lista,data]);*/
         const buscarHeroi=  useCallback( async ()=> {
-            const response = await api.get('http://gateway.marvel.com/v1/public/characters?name=Ajaxis&ts=1&apikey=f395721c8a9678197e445dc3da092879&hash=c873e15a8ca807d3232075d42403fd09')
+            const response = await api.get('http://gateway.marvel.com/v1/public/characters?name=iron%20man&ts=1&apikey=f395721c8a9678197e445dc3da092879&hash=c873e15a8ca807d3232075d42403fd09')
             const data  = response.data.data.results;
             setLista([...lista, data[0]]);
             //setNewTech('');
